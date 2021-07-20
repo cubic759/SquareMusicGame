@@ -7,11 +7,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>music-game Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <properties>
-  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
- 	 <maven.compiler.source>11</maven.compiler.source>
- 	 <maven.compiler.target>11</maven.compiler.target>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -23,6 +18,15 @@
   <build>
     <finalName>music-game</finalName>
     <plugins>
+    	<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.0</version>
+            <configuration>
+                <target>11</target>
+                <source>11</source>
+            </configuration>
+        </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
