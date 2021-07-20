@@ -124,7 +124,7 @@
 					for (var a = 1; a <= instruments; a++) {
 						$("div[id='d" + a + "']").empty();
 					}
-				} else {
+				} else {//bpm的条也要跟着变，名字排序，单个评分，修改，喜爱那就可以拖拽。
 					var sheet = json[id];
 					bpm = sheet.bpm;
 					beats = sheet.beats;
